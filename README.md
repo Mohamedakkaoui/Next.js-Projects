@@ -20,9 +20,9 @@ Welcome to the Next.js Learning Projects repository! This repo is dedicated to e
 This repository is designed to help you learn Next.js by building a series of small projects. Whether you're new to Next.js or looking to deepen your understanding, these projects will guide you through the key concepts and practical applications of this powerful framework.
 
 ### Projects
-- Project 1: Personal Portfolio
+- Project 1: NameInfo Lookup
 
-A simple personal portfolio website to showcase your work and skills.
+looking ingot about a name and related data from an api.
 
 - Project 2: Blog with Markdown Support
 
