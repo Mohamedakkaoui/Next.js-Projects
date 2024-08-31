@@ -3,12 +3,19 @@ Next.js Learning Projects
 Welcome to the Next.js Learning Projects repository! This repo is dedicated to exploring and mastering Next.js through a series of small, hands-on projects. Each project focuses on different aspects of Next.js, from basic concepts to more advanced features.
 
 Table of Contents
+
 Introduction
+
 Projects
+
 Installation
+
 Usage
+
 Contributing
+
 License
+
 Introduction
 This repository is designed to help you learn Next.js by building a series of small projects. Whether you're new to Next.js or looking to deepen your understanding, these projects will guide you through the key concepts and practical applications of this powerful framework.
 
