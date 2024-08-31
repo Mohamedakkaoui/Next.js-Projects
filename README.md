@@ -20,31 +20,31 @@ Welcome to the Next.js Learning Projects repository! This repo is dedicated to e
 This repository is designed to help you learn Next.js by building a series of small projects. Whether you're new to Next.js or looking to deepen your understanding, these projects will guide you through the key concepts and practical applications of this powerful framework.
 
 ### Projects
-Project 1: Personal Portfolio
+- Project 1: Personal Portfolio
 
 A simple personal portfolio website to showcase your work and skills.
 
-Project 2: Blog with Markdown Support
+- Project 2: Blog with Markdown Support
 
 A basic blog that allows you to write and manage posts using Markdown files.
 
-Project 3: To-Do List App
+- Project 3: To-Do List App
 
 A to-do list application where you can add, edit, and delete tasks.
 
-Project 4: Weather App
+- Project 4: Weather App
 
 A weather application that fetches and displays weather data based on user input.
 
-Project 5: E-commerce Product Listing
+- Project 5: E-commerce Product Listing
 
 A product listing page with search and filter functionality.
 
-Project 6: Note-taking App
+- Project 6: Note-taking App
 
 A simple note-taking application with CRUD (Create, Read, Update, Delete) functionality.
 
-Project 7: Movie Database
+- Project 7: Movie Database
 
 An app to search for and display movie details using an external API.
 More projects will be added over time as I explore additional features and use cases of Next.js.
