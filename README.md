@@ -1,25 +1,25 @@
-Next.js Learning Projects
+**Next.js Learning Projects**
  
 Welcome to the Next.js Learning Projects repository! This repo is dedicated to exploring and mastering Next.js through a series of small, hands-on projects. Each project focuses on different aspects of Next.js, from basic concepts to more advanced features.
 
-Table of Contents
+##Table of Contents
 
-Introduction
+##Introduction
 
-Projects
+##Projects
 
-Installation
+##Installation
 
-Usage
+##Usage
 
-Contributing
+##Contributing
 
-License
+##License
 
-Introduction
+###Introduction
 This repository is designed to help you learn Next.js by building a series of small projects. Whether you're new to Next.js or looking to deepen your understanding, these projects will guide you through the key concepts and practical applications of this powerful framework.
 
-Projects
+###Projects
 Project 1: Personal Portfolio
 
 A simple personal portfolio website to showcase your work and skills.
@@ -49,7 +49,7 @@ Project 7: Movie Database
 An app to search for and display movie details using an external API.
 More projects will be added over time as I explore additional features and use cases of Next.js.
 
-Installation
+###Installation
 To get started with any of the projects:
 
 Clone the repository:
@@ -80,5 +80,5 @@ npm run dev
 yarn dev
 This will start a development server, and you can view the project in your browser at http://localhost:3000.
 
-Contributing
+###Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository, make your changes, and submit a pull request.
