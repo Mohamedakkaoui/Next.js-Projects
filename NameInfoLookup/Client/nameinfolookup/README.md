@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Predict Personal Info Component
 
-## Getting Started
+This project is a small Next.js app that predicts a person's **age**, **gender**, and **country** based on their first name. It fetches data from three external APIs and dynamically displays the information on a page created using Next.js dynamic routing.
 
-First, run the development server:
+## Features
+
+- **Next.js Built-in Routing**: 
+  - This project leverages the Next.js dynamic routing feature. When a file is created under the `pages` directory (e.g., `pages/[name].tsx`), Next.js automatically generates a route for it. In this project, the `[name]` dynamic route is used to predict personal information based on the `name` parameter passed in the URL.
+  
+- **Dynamic Data Fetching**: 
+  - The app fetches data from three APIs:
+    - [Agify.io](https://agify.io/) for predicting age
+    - [Genderize.io](https://genderize.io/) for predicting gender
+    - [Nationalize.io](https://nationalize.io/) for predicting the probable country
+  - It uses `Promise.all` to handle multiple asynchronous requests efficiently, ensuring that all the data is fetched before rendering the results.
+
+## API Endpoints Used
+
+1. **Agify API**: Predicts the person's age based on their first name.
+    - Endpoint: `https://api.agify.io/?name=<name>`
+  
+2. **Genderize API**: Predicts the person's gender based on their first name.
+    - Endpoint: `https://api.genderize.io/?name=<name>`
+
+3. **Nationalize API**: Predicts the most probable country for the person based on their first name.
+    - Endpoint: `https://api.nationalize.io/?name=<name>`
+
+## Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+├── Prediction
+│   └── [name].tsx  # Dynamic route that handles the fetching and rendering
+│ 
+├── page.tsx # Main component for displaying predicted data
+│    
+└── README.md # Project documentation
