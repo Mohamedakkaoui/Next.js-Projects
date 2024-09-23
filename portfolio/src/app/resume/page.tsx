@@ -9,6 +9,7 @@ import {
   FaJs,
   FaPython,
   FaGithub,
+  FaBootstrap,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -16,7 +17,10 @@ import {
   SiTypescript,
   SiMongodb,
   SiExpress,
+  SiRedux,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+import { FaGit } from "react-icons/fa6";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   Tooltip,
@@ -117,63 +121,96 @@ const skills = {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laborum perspiciatis enim officiis ",
   skillList: [
     {
-      icon: <SiExpress />,
-      name: "Express.js",
+      title: "Frontend Technologies",
+      SkillSet: [
+        {
+          icon: <FaReact />,
+          name: "React.js",
+        },
+        {
+          icon: <SiNextdotjs />,
+          name: "Next.js",
+        },
+        {
+          icon: <FaHtml5 />,
+          name: "Html 5",
+        },
+        {
+          icon: <FaCss3 />,
+          name: "Css",
+        },
+        {
+          icon: <FaBootstrap />,
+          name: "BootStrap",
+        },
+        {
+          icon: <SiTailwindcss />,
+          name: "Tailwind.css",
+        },
+        {
+          icon: <SiRedux />,
+          name: "Redux",
+        },
+      ],
     },
     {
-      icon: <SiMongodb />,
-      name: "MongoDB",
+      title: "Backend Technologies",
+      SkillSet: [
+        {
+          icon: <FaNodeJs />,
+          name: "Node.js",
+        },
+        {
+          icon: <SiExpress />,
+          name: "Express.js",
+        },
+        {
+          icon: <SiMongodb />,
+          name: "MongoDB",
+        },
+      ],
     },
     {
-      icon: <SiTypescript />,
-      name: "Typescript",
+      title: "Programming Languages",
+      SkillSet: [
+        {
+          icon: <FaJs />,
+          name: "Javascript",
+        },
+        {
+          icon: <SiTypescript />,
+          name: "Typescript",
+        },
+        {
+          icon: <FaPython />,
+          name: "Python",
+        },
+      ],
     },
     {
-      icon: <FaGithub />,
-      name: "Git/Github",
-    },
-    {
-      icon: <FaPython />,
-      name: "Python",
-    },
-    {
-      icon: <FaHtml5 />,
-      name: "Html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "Css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "Node.js",
-    },
-    {
-      icon: <FaReact />,
-      name: "React.js",
-    },
-    {
-      icon: <FaJs />,
-      name: "Javascript",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "Tailwind.css",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-    },
-    {
-      icon: <FaHtml5 />,
-      name: "Html 5",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
+      title: "Tools/Version Control",
+      SkillSet: [
+        {
+          icon: <FaGithub />,
+          name: "Github",
+        },
+        {
+          icon: <FaGit />,
+          name: "Git",
+        },
+        {
+          icon: <VscVscode />,
+          name: "Vscode",
+        },
+        {
+          icon: <FaFigma />,
+          name: "Figma",
+        },
+      ],
     },
   ],
 };
+
 function Resume() {
   return (
     <motion.div
@@ -262,22 +299,31 @@ function Resume() {
                     {skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                <ul className="flex flex-col w-full  gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
                     return (
-                      <li key={index}>
-                        <TooltipProvider delayDuration={100}>
-                          <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                {skill.icon}
-                              </div>
-                            </TooltipTrigger>
-                            <TooltipContent>
-                              <p className="capitalize">{skill.name}</p>
-                            </TooltipContent>
-                          </Tooltip>
-                        </TooltipProvider>
+                      <li key={index} className="xl:text-left md:text-left text-center">
+                        <h3 className="text-2xl font-bold mb-6">
+                          {skill.title}
+                        </h3>
+                        <div className="flex flex-wrap gap-[30px] sm:gap-[15px] md:justify-start justify-center">
+                          {skill.SkillSet.map((item, index) => {
+                            return (
+                              <TooltipProvider key={index} delayDuration={100}>
+                                <Tooltip>
+                                  <TooltipTrigger className="w-[150px] h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                    <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                      {item.icon}
+                                    </div>
+                                  </TooltipTrigger>
+                                  <TooltipContent>
+                                    <p className="capitalize">{item.name}</p>
+                                  </TooltipContent>
+                                </Tooltip>
+                              </TooltipProvider>
+                            );
+                          })}
+                        </div>
                       </li>
                     );
                   })}
@@ -290,11 +336,16 @@ function Resume() {
             >
               <div className="flex flex-col gap-[30px]">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="mx-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                <p className="mx-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[820px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
                         <span className="text-white/60">{item.fileName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
