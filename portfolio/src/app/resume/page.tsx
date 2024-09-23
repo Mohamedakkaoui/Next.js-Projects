@@ -33,24 +33,7 @@ import { motion } from "framer-motion";
 import SVg from "@/Public/badge.svg";
 const about = {
   title: "About me",
-  description: `Heyyyy-yo! Akkaoui here, I hold a bachelor's degree in Physics and
-              recently graduated from a dynamic program called Arkx, where I
-              specialized in Full Stack Development with a focus on the MERN
-              stack. Before diving into the world of full-stack development, I
-              honed my skills in Software Engineering at ALX. 
-              Currently, I'm bringing my passion and expertise to 2peerfect as a
-              Full Stack Developer intern. Coding is not just a job for me—it's
-              a source of joy and excitement. I love creating, learning, and
-              exploring new technologies and methodologies that push the
-              boundaries of what's possible..  Beyond the screen,
-              I'm an avid reader who finds inspiration in books, and I love the
-              challenge and teamwork involved in playing basketball. These
-              interests keep me balanced and fueled with fresh ideas and
-              perspectives.  I'm always eager to take on new
-              challenges, contribute to exciting projects, and make things
-              better. If you're looking for someone who combines technical
-              prowess with a passion for continuous learning and personal
-              growth, let's connect!`,
+  description: `Hey! I'm Mohamed Akkaoui, a passionate Full Stack Developer with a love for technology and continuous learning. For me, coding goes beyond just work—it's a source of joy and creativity. I’m always exploring new technologies and methodologies that push the boundaries of what’s possible. When I'm not coding, I enjoy reading and playing basketball, which keeps me balanced and energized with fresh ideas. I’m always eager to take on new challenges, learn new things, and contribute to exciting projects.`,
   info: [
     { fileName: "Name", fieldValue: "Mohamed akkaoui" },
     { fileName: "Phone", fieldValue: "(+212)631603723" },
@@ -66,7 +49,7 @@ const experience = {
   icon: "",
   title: "My experience",
   description:
-    "  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim ea eligendi modi aut alias ",
+    "I have hands-on experience in full-stack development, taking on real-world challenges and contributing to impactful projects. I enjoy working in dynamic environments and continuously pushing my skills to grow as a developer.",
   items: [
     {
       company: "2Peerfect",
@@ -90,7 +73,7 @@ const education = {
   icon: "",
   title: "My education",
   description:
-    "orem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, iste? ",
+    "I have a solid foundation in full-stack development, with comprehensive training in both frontend and backend technologies. My Academic background has enhanced my problem-solving abilities, enabling me to tackle complex technical challenges and develop complete web solutions.",
   items: [
     {
       institution: "JobinTech",
@@ -118,7 +101,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, laborum perspiciatis enim officiis ",
+    "I specialize in full-stack development, building scalable applications with modern technologies. I focus on creating efficient, user-friendly interfaces and backend systems while continuously learning and staying updated with industry trends ",
   skillList: [
     {
       title: "Frontend Technologies",
@@ -302,7 +285,10 @@ function Resume() {
                 <ul className="flex flex-col w-full  gap-4 xl:gap-[30px]">
                   {skills.skillList.map((skill, index) => {
                     return (
-                      <li key={index} className="xl:text-left md:text-left text-center">
+                      <li
+                        key={index}
+                        className="xl:text-left md:text-left text-center"
+                      >
                         <h3 className="text-2xl font-bold mb-6">
                           {skill.title}
                         </h3>
