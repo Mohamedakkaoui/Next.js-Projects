@@ -8,10 +8,10 @@ function Home() {
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
-          <div className="text-center xl:text-left order-2 xl:order-none">
+          <div className="text-center xl:text-left order-2 xl:order-none"> 
             <span className="text-xl">Web Developer</span>
             <h1 className="h1 mb-6">
-              Hello I'am <br />{" "}
+              Hello I'am <br />
               <span className="text-accent">Mohamed Akkaoui</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">

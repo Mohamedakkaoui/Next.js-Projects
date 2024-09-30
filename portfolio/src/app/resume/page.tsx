@@ -33,7 +33,7 @@ import { motion } from "framer-motion";
 import SVg from "@/Public/badge.svg";
 const about = {
   title: "About me",
-  description: `Hey! I'm Mohamed Akkaoui, a passionate Full Stack Developer with a love for technology and continuous learning. For me, coding goes beyond just work—it's a source of joy and creativity. I’m always exploring new technologies and methodologies that push the boundaries of what’s possible. When I'm not coding, I enjoy reading and playing basketball, which keeps me balanced and energized with fresh ideas. I’m always eager to take on new challenges, learn new things, and contribute to exciting projects.`,
+  description: `A passionate Full Stack Developer with a love for technology and continuous learning. For me, coding goes beyond just work—it's a source of joy and creativity. I’m always exploring new technologies and methodologies that push the boundaries of what’s possible. When I'm not coding, I enjoy reading and playing basketball, which keeps me balanced and energized with fresh ideas. I’m always eager to take on new challenges, learn new things, and contribute to exciting projects.`,
   info: [
     { fileName: "Name", fieldValue: "Mohamed akkaoui" },
     { fileName: "Phone", fieldValue: "(+212)631603723" },
