@@ -14,36 +14,12 @@ import Link from "next/link";
 import Image from "next/image";
 import Image1 from "@/Public/Screenshot 2024-09-29 164620.png";
 import Image2 from "@/Public/Screen Shot 2024-06-26 at 15.10.25.png";
+import Image3 from "@/Public/Screenshot 2024-11-23 224248.png";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Portfolio",
-    description:
-      "A sleek personal portfolio built with Next.js, TypeScript, and Framer Motion, showcasing my web development projects with smooth animations and a responsive, modern design",
-    stack: [
-      {
-        name: "Next.js",
-      },
-      {
-        name: "TailwindCSS",
-      },
-      {
-        name: "Typescript",
-      },
-      {
-        name: "Framer Motion",
-      },
-    ],
-    image: Image1,
-    live: "Soon",
-    github:
-      "https://github.com/Mohamedakkaoui/Next.js-Projects/tree/master/portfolio",
-  },
-  {
-    num: "02",
-    category: "FullStack",
+    category: "Full-Stack",
     title: "RYMZ",
     description:
       "A modern real estate platform built with a focus on user experience, offering advanced property search features, Mapbox integration, and comprehensive user and admin dashboards for seamless property management.",
@@ -73,42 +49,36 @@ const projects = [
       "https://github.com/Mohamedakkaoui/Real-Estate-Website/tree/betaVersion2",
   },
   {
-    num: "03",
-    category: "FullStack",
-    title: "Agency Real Estate",
+    num: "02",
+    category: "frontend",
+    title: "Portfolio",
     description:
-      "A professional real estate agency platform designed to showcase property listings with detailed filters, Mapbox-powered maps, and a user-friendly interface for both clients and agents",
+      "A sleek personal portfolio built with Next.js, TypeScript, and Framer Motion, showcasing my web development projects with smooth animations and a responsive, modern design",
     stack: [
       {
-        name: "Javascript",
-      },
-      {
-        name: "Node.js",
-      },
-      {
-        name: "Express",
-      },
-      {
-        name: "MongoDB",
-      },
-      {
-        name: "React",
+        name: "Next.js",
       },
       {
         name: "TailwindCSS",
       },
+      {
+        name: "Typescript",
+      },
+      {
+        name: "Framer Motion",
+      },
     ],
-    image: Image2,
+    image: Image1,
     live: "Soon",
     github:
-      "https://github.com/Mohamedakkaoui/Real-Estate-Website/tree/AgencyWebsite",
+      "https://github.com/Mohamedakkaoui/Next.js-Projects/tree/master/portfolio",
   },
   {
-    num: "04",
+    num: "03",
     category: "FullStack",
     title: "E-learning.AI",
     description:
-      "A comprehensive e-learning platform featuring AI-driven tools, allowing users to customize avatars, create dynamic content, and engage with advanced video editing features for an immersive learning experience",
+      "A comprehensive E-learning platform featuring AI-driven tools, allowing users to customize avatars, create dynamic content, and engage with advanced video editing features for an immersive learning experience",
     stack: [
       {
         name: "Javascript",
@@ -129,7 +99,7 @@ const projects = [
         name: "TailwindCSS",
       },
     ],
-    image: Image2,
+    image: Image3,
     live: "Soon",
     github: "https://github.com/Mohamedakkaoui/E-learning.AI",
   },

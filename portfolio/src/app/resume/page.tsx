@@ -1,5 +1,4 @@
 "use client";
-import { title } from "process";
 import {
   FaHtml5,
   FaCss3,
@@ -10,7 +9,10 @@ import {
   FaPython,
   FaGithub,
   FaBootstrap,
+  FaLaravel,
+  FaVuejs 
 } from "react-icons/fa";
+import { FaPhp } from "react-icons/fa6";
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -18,6 +20,7 @@ import {
   SiMongodb,
   SiExpress,
   SiRedux,
+  SiMysql 
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FaGit } from "react-icons/fa6";
@@ -30,7 +33,6 @@ import {
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
-import SVg from "@/Public/badge.svg";
 const about = {
   title: "About me",
   description: `A passionate Full Stack Developer with a love for technology and continuous learning. For me, coding goes beyond just work—it's a source of joy and creativity. I’m always exploring new technologies and methodologies that push the boundaries of what’s possible. When I'm not coding, I enjoy reading and playing basketball, which keeps me balanced and energized with fresh ideas. I’m always eager to take on new challenges, learn new things, and contribute to exciting projects.`,
@@ -52,9 +54,14 @@ const experience = {
     "I have hands-on experience in full-stack development, taking on real-world challenges and contributing to impactful projects. I enjoy working in dynamic environments and continuously pushing my skills to grow as a developer.",
   items: [
     {
-      company: "2Peerfect",
+      company: "2CA busniess",
       position: "Full Stack Developer",
-      duration: "June 2024 - Present 2024",
+      duration: "October 2022 - Present",
+    },
+    {
+      company: "2Peerfect",
+      position: "Mern Stack Developer",
+      duration: "June 2024 - October 2024",
     },
     {
       company: "ARK-X Talent Factory",
@@ -65,7 +72,7 @@ const experience = {
       company: "Digisell",
       position: "Conseiller Commercial",
       duration: "June 2022 - January 2023",
-    },
+    }, 
   ],
 };
 
@@ -111,6 +118,10 @@ const skills = {
           name: "React.js",
         },
         {
+          icon: <FaVuejs />,
+          name: "Vue.js",
+        },
+        {
           icon: <SiNextdotjs />,
           name: "Next.js",
         },
@@ -137,7 +148,7 @@ const skills = {
       ],
     },
     {
-      title: "Backend Technologies",
+      title: "Backend/databases Technologies",
       SkillSet: [
         {
           icon: <FaNodeJs />,
@@ -150,6 +161,14 @@ const skills = {
         {
           icon: <SiMongodb />,
           name: "MongoDB",
+        },
+        {
+          icon: <FaLaravel />,
+          name: "Laravel",
+        },
+        {
+          icon: <SiMysql  />,
+          name: "MySql",
         },
       ],
     },
@@ -168,6 +187,10 @@ const skills = {
           icon: <FaPython />,
           name: "Python",
         },
+        {
+          icon : <FaPhp/>,
+          name : "PHP"
+        }
       ],
     },
     {
