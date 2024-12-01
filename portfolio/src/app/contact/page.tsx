@@ -38,8 +38,7 @@ function Contact() {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem ipsum dolor, sit amet consectetur adipisicing eltium
-                asperiores qcorrupti? Ab!
+              Have a project or idea in mind? Let's bring it to life! Fill out the form below, and I'll get back to you soon.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input type="firstname" placeholder="Firstname" />
