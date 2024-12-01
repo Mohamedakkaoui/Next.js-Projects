@@ -1,5 +1,5 @@
 "use client";
-import { animate, motion } from "framer-motion";
+import {  motion } from "framer-motion";
 import Selfie from "@/Public/image00001-min.png";
 import Image from "next/image";
 function Photo() {
