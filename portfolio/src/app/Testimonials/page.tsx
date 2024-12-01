@@ -2,6 +2,7 @@
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
 import { motion } from "framer-motion";
+
 const services = [
   {
     num: "Mohamed Ouadou",
@@ -18,15 +19,15 @@ const services = [
     href: "",
   },
   {
-    num: "03",
-    title: "Logo design",
-    description: "Lorem ipsum dolor sit amet consectetur ",
+    num: "Zineb Laabdi",
+    title: "Full Stack developer",
+    description: "I had the pleasure of working with Mohamed Akkaoui in the same team at 2peerfect and Ark-X Talent Factory, where we collaborated on several projects as full-stack developers. Mohamed Akkaoui is a highly skilled, dedicated, and ambitious professional who approaches every task with focus and determination.One of his most outstanding qualities is his exceptional problem-solving ability. Whether tackling complex coding challenges or managing time-sensitive project requirements, he consistently delivers efficient and innovative solutions.In addition to his technical expertise, Mohamed Akkaoui demonstrates exceptional teamwork and communication skills. He is always eager to share insights and provide support, fostering a collaborative environment that drives the team's success. It was truly a privilege to work alongside such a talented and reliable developer. I am confident he will be a tremendous asset to any organization he joins, and I look forward to witnessing his continued success.",
     href: "",
   },
   {
-    num: "04",
-    title: "Web development",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. I",
+    num: "anonyme",
+    title: "some job",
+    description: "I had the pleasure of working with Mohamed Akkaoui in the same team at 2peerfect and Ark-X Talent Factory, where we collaborated on several projects as full-stack developers. Mohamed Akkaoui is a highly skilled, dedicated, and ambitious professional who approaches every task with focus and determination.One of his most outstanding qualities is his exceptional problem-solving ability. Whether tackling complex coding challenges or managing time-sensitive project requirements, he consistently delivers efficient and innovative solutions.In addition to his technical expertise, Mohamed Akkaoui demonstrates exceptional teamwork and communication skills. He is always eager to share insights and provide support, fostering a collaborative environment that drives the team's success. It was truly a privilege to work alongside such a talented and reliable developer. I am confident he will be a tremendous asset to any organization he joins, and I look forward to witnessing his continued success.",
     href: "",
   },
 ];
