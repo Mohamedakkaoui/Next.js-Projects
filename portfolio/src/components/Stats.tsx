@@ -19,6 +19,9 @@ function Stats() {
                   key={index}
                   className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
                 >
+                  <span className="text-3xl">
+                    {state.text === "code commits" ? "+" : ""}
+                  </span>
                   <CountUp
                     end={state.num}
                     duration={5}
