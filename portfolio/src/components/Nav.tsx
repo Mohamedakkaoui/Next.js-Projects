@@ -11,7 +11,6 @@ const Links = [
 ];
 function Nav() {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <>

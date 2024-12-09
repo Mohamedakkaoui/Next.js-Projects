@@ -25,17 +25,16 @@ function Home() {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <Link
-                  href="/CV-Akkaoui-Mohamed.pdf"
+                <a
+                  href="./CV-Akkaoui-Mohamed.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  locale={false}
+                  download="CV-Akkaoui-Mohamed.pdf"
                 >
                   <span>Dowanload CV</span>
-                </Link>
+                </a>
                 <FiDownload className="text-xl" />
               </Button>
-
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
