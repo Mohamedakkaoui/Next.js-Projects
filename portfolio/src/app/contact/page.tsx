@@ -9,17 +9,17 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "(+212) 6 31 60 37 23",
+    description: "(+212) 6 31 ** ** **",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "akkaouimohamed00@gmail.com",
+    description: "akka***********@gmail.com",
   },
   {
     icon: <FaMapMarkedAlt />,
     title: "Adress",
-    description: "Al Amal Kenitra",
+    description: "Rabat-Salé-Kénitra",
   },
 ];
 function Contact() {
