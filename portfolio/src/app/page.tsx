@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
