@@ -19,21 +19,21 @@ function Home() {
               innovative web solutions and continuously enhancing my skills.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="./CV-Akkaoui-Mohamed.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download="CV-Akkaoui-Mohamed.pdf"
               >
-                <a
-                  href="./CV-Akkaoui-Mohamed.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  download="CV-Akkaoui-Mohamed.pdf"
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="uppercase flex items-center gap-2"
                 >
-                  <span>Dowanload CV</span>
-                </a>
-                <FiDownload className="text-xl" />
-              </Button>
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
