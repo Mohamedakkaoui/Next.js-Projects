@@ -20,7 +20,7 @@ function Home() {
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="./CV-Akkaoui-Mohamed.pdf"
+                href="/CV-Akkaoui-Mohamed.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download="CV-Akkaoui-Mohamed.pdf"
